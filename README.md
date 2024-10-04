@@ -27,6 +27,7 @@ $$
 \dot{\psi} &= \frac{L_{3}}{\lambda_{3}} - \frac{L_{z} - L_{3}\cos\theta}{\lambda_{1} \sin^{2}\theta}\cos\theta,
 \end{split}
 $$
+
 where $L_3$ and $L_z$ are conserved momenta along the body axis $\mathbf{e}_3$ and the global axis $\hat{\mathbf{z}}$, respectively. Note that the first equation is second order in time, and you'll need to introduced an auxiliary variable $\dot{\theta}$ to reduce it to 4 first-order equations.
 
 In a C++ file `problem1.cpp`, implement the equations listed above, and use the `rk45_dormand_prince` class you developed earlier to solve the equations. You will need to specify a collection of parameters: $\lambda_1$, $\lambda_3$, $MgR$, $L_z$, and $L_3$. You can set $\lambda_1 = MgR = 1$ and $\lambda_3 = 2$. Let the initial condition be such that $\theta_0 = \pi/3$ and $\phi_0 = \psi_0 = \dot{\theta}_0 = 0$. Experiment with different combinations of $L_z$ and $L_3$ and plot the results. Plot the results from 3 different set of parameters, including at least one set where $L_z > L_3$ and one where $L_z < L_3$. Name the plots `problem1a.png`, `problem1b.png`, and `problem1c.png` and submit them to the repository.
