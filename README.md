@@ -86,7 +86,7 @@ plot = k3d.plot()
 plot += plt_line
 plot.display()
 ```
-Take a screenshot of the plot using the "Controls" at the upper right corner and commit it to the repository as `problem2a.png`.
+Take a screenshot of the plot using the "Controls" at the upper right corner and commit it to the repository as `problem2.png`.
 
 You can also animate the trajectory using the following lines of code:
 
