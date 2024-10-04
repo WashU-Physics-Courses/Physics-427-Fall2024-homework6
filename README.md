@@ -4,7 +4,7 @@ __Due 11:59pm Wednesday 10/16/2023__
 
 This homework is longer than usual, since it's like two homeworks bundled together. We will apply our ODE solver to some math/physics problems, and visualize the results. 
 
-## 1. Motion of a Spinning Top (20 points)
+## 1. Motion of a Spinning Top (10 points)
 
 The orientation of a spinning top is best characterized by three Euler angles. There are multiple ways to define Euler angles, but we will adopt the one used in the book "Classical Mechanics" by John R. Taylor. The three Euler angles $\phi$, $\theta$ and $\psi$ uniquely determine the orientation of the body axes of a rigid body $\mathbf{e}_1$, $\mathbf{e}_2$, and $\mathbf{e}_3$ with respect to the global $\hat{\mathbf{x}}$, $\hat{\mathbf{y}}$, and $\hat{\mathbf{z}}$ axes:
 
@@ -49,7 +49,7 @@ $$
 
 You will see that the tip traces out a complicated shape. The spinning of the top is contained in the evolution of $\psi$, which we do not plot. Instead, we plot the _precession_ (rotation of the tip in $\phi$) and _nutation_ (rotation of the tip in $\theta$) of the spinning top.
 
-## 2. The Lorenz System (20 points)
+## 2. The Lorenz System (10 points)
 
 The Lorenz system is a famous one due to its strange attractor solution:
 
@@ -98,7 +98,7 @@ for t in range(1, N):
 
 What this loop does is that it updates the plotted line with progressively more points from the `vertices` array. 
 
-## 3. Chaos in the Driven Damped Pendulum (20 points)
+## 3. Chaos in the Driven Damped Pendulum (10 points)
 
 One of the simplest systems that exhibit chaotic behavior is the nonlinear driven damped pendulum (DDP). The system is described by the following simple equation:
 
@@ -112,7 +112,7 @@ Write a program `problem3.cpp` to solve the equations from $t=0$ to $t=100$. Use
 
 Now adjust your program to solve the equation from $t=0$ to $t=50000$, still using dense output and writing 50,000 output points. This is equivalent to taking a regular output at an interval of $\Delta t = 1$. The program may take a while to run. Remember to turn on optimization `-O3` when you are compiling your code. Plot the result in a similar way and commit it as `problem3b.png`. Notice how the plot is greatly simplified. This is called the _Poincaré section_. Technically Poincaré sections means sampling the trajectory in a given regular way, and taking a fixed time interval $\Delta t$ is but one particular choice. Often this type of section, when chosen correctly, can reveal the structure of chaos.
 
-## 4. Quantum Mechanics in 1D (40 points)
+## 4. Quantum Mechanics in 1D (20 points)
 
 The time-independent Schrödinger equation in 1D reads:
 
